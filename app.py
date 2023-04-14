@@ -12,8 +12,9 @@ from sklearn.model_selection import train_test_split as tts
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.preprocessing import LabelEncoder as LE
 from sklearn.metrics.pairwise import cosine_similarity
-
+import pickle
 import nltk
+punkt = pickle.load(open('punkt.pkl', 'rb'))
 nltk.download('punkt')
 from nltk.corpus import stopwords
 
