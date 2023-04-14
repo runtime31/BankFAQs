@@ -17,6 +17,8 @@ import nltk
 punkt = pickle.load(open('punkt.pkl', 'rb'))
 nltk.download('punkt')
 from nltk.corpus import stopwords
+import nltk
+nltk.download('stopwords')
 
 stop_words = set(stopwords.words('english'))
 
